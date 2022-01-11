@@ -3,7 +3,14 @@ package Ex7;
 public class Preguica extends Animal {
 
     public Preguica(String nome, Integer idade) {
+
         super(nome, idade);
+    }
+
+    @Override
+    public void deveEmitirSom() {
+
+        System.out.println("Geme!");
     }
 
     public void deveSubirEmArvores() {
@@ -13,9 +20,6 @@ public class Preguica extends Animal {
 
     @Override
     public String toString() {
-        return "Preguiça{" +
-                "nome='" + getNome() + '\'' +
-                ", idade=" + getIdade() +
-                '}';
+        return "A PREGUIÇA " + getNome() + " de " + getIdade() + " anos";
     }
 }
